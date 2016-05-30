@@ -10,3 +10,5 @@ Technologies (les technologies):
   - node-telegram-bot-api : https://github.com/yagop/node-telegram-bot-api ; license : https://github.com/yagop/node-telegram-bot-api/blob/master/LICENSE.md
 
 License (la licence): Apache 2.0 @ 2016 Samir
+
+![alt tag](https://github.com/samirtf/xelly_bot/blob/master/xelly_bot.png)
