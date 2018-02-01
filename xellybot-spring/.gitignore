@@ -2,3 +2,4 @@
 xelly/mvnw
 xelly/mvnw.cmd
 xelly/.mvn/
+xelly/src/main/java/br/com/cantinho/xelly/config/BotConfig.java
