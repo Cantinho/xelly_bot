@@ -1,6 +1,7 @@
 package br.com.cantinho.xelly;
 
 import br.com.cantinho.xelly.businesslogic.XellyHandler;
+import br.com.cantinho.xelly.processor.MessageProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.telegram.telegrambots.ApiContextInitializer;
@@ -18,7 +19,10 @@ public class XellyApplication {
     ApiContextInitializer.init();
     TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
     try {
-      telegramBotsApi.registerBot(new XellyHandler());
+      XellyHandler xellyHandler = new XellyHandler();
+      xellyHandler.register(xellyHandler);
+      xellyHandler.register(new MessageProcessor());
+      telegramBotsApi.registerBot(xellyHandler);
 //      telegramBotsApi.registerBot(new DirectionsHandlers());
 //      telegramBotsApi.registerBot(new RaeHandlers());
 //      telegramBotsApi.registerBot(new WeatherHandlers());
